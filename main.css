@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('https://static.vecteezy.com/system/resources/previews/018/752/867/large_2x/abstract-background-design-background-texture-design-with-abstract-style-creative-illustration-for-advertising-posters-business-cards-flyers-websites-banners-covers-landings-pages-etc-free-vector.jpg');
+    padding: 30px;
+
+}
+
+.tarefa {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 110px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #000;
+}
+
+.tarefa h1 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tarefa h3 {
+    color: #002765;
+    display: flex;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.tarefa h1 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #002765;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 46px;
+    display: inline-block;
+    transition: .4s;
+}
+
+button:hover {
+    color: #ffffff;
+    box-shadow: 0px 0px 8px #0c49ab;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Img/circle.svg);
+    background-size: cover;
+    background-position: center;
+    top: 9px;
+    left: 8px;
+}
+
+ul li.check {
+    color:#555;
+    text-decoration: line-through
+}
+
+ul li.check::before {
+    background-image: url(Img/tick-circle.svg);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    transition: .2s;
+}
+
+ul li span:hover {
+    background: #ff0000e3;
+}
